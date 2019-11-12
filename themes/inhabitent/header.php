@@ -33,3 +33,12 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+			<a href="<?php echo home_url(); ?>">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg"/>
+			</a>
+
+		<div class="search_form"><?php get_search_form(); ?> </div>
+
+
+
+			

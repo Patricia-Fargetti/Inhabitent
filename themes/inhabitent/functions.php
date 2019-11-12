@@ -117,3 +117,4 @@ require get_template_directory() . '/inc/extras.php';
 
 // wp_enqueue_style( 'red-starter-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css' );
 // }
+
