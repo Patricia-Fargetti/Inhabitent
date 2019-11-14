@@ -1,0 +1,73 @@
+.site-header{
+    position:fixed;
+    width: 100%;
+    z-index: 99;
+}
+.header-menu{
+    background-color: rgba(white, 0.6);
+    
+}
+
+.main-navigation{
+	display:flex;
+	flex-direction: row;
+    justify-content: flex-end;
+	height: auto;
+	width: auto;
+	order: 2;
+    margin-right: 50px;
+	align-self: center;
+}
+
+.nav-menu {
+    a {
+        color: #248a83;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.625rem;
+    }
+}
+
+.fp-banner {
+    position: relative;
+   
+   
+}
+
+.site-content{
+    .fp-banner{ background-image: linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.4) 0% rgba(0,0,0,0.4)100%);
+
+    }
+
+    
+}
+
+
+.about-banner {
+    height: 100vh; width: 100%; 
+}
+
+.fp-banner-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+// .search-field{
+//     //display: none;
+// }
+.site-content {
+.page-heading{
+    color: white  !important; 
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 50px;
+}
+}
+

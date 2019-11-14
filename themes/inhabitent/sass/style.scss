@@ -63,11 +63,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
+@import "footer";
+@import "header";
+@import "about";
+
 
 
 .site-content{
-	background: url("../../images/logos/home-hero.jpg"); background-position: fixed;
-	background-size: contain; background-repeat: no-repeat;
+	// background: url("../../images/logos/home-hero.jpg"); background-position: fixed;
+	// background-size: contain; background-repeat: no-repeat;
 	display: flex;
 	width: 100%;
     flex-direction: column;
@@ -80,16 +84,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	order: 1;
 	margin-left: auto;
 }
-.main-navigation{
-	display:flex;
-	flex-direction: row;
-    justify-content: flex-end;
-	height: auto;
-	width: auto;
-	order: 2;
-	margin-right: auto;
-	align-self: center;
-}
+
 .centered-logo{
     transform: translate(50%, 20%);
 }

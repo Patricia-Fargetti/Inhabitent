@@ -48,4 +48,3 @@
 
 	</body>
 </html>
-<i class="fas fa-building"></i>

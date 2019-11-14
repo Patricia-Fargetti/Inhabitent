@@ -670,27 +670,13 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.site-content {
-  background: url("../../images/logos/home-hero.jpg");
-  background-position: fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.site-header {
+  position: fixed;
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  z-index: 99; }
 
-.tent-logo {
-  height: 80px;
-  width: 80px;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  margin-left: auto; }
+.header-menu {
+  background-color: rgba(255, 255, 255, 0.6); }
 
 .main-navigation {
   display: -webkit-box;
@@ -708,9 +694,63 @@ object {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  margin-right: auto;
+  margin-right: 50px;
   -ms-flex-item-align: center;
       align-self: center; }
+
+.nav-menu a {
+  color: #248a83;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.625rem; }
+
+.fp-banner {
+  position: relative; }
+
+.site-content .fp-banner {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0% rgba(0, 0, 0, 0.4) 100%); }
+
+.about-banner {
+  height: 100vh;
+  width: 100%; }
+
+.fp-banner-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.site-content .page-heading {
+  color: white  !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 50px; }
+
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.tent-logo {
+  height: 80px;
+  width: 80px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-left: auto; }
 
 .centered-logo {
   -webkit-transform: translate(50%, 20%);
