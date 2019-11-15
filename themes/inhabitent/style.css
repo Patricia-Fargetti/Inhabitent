@@ -707,13 +707,10 @@ object {
 .fp-banner {
   position: relative; }
 
-.site-content .fp-banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0% rgba(0, 0, 0, 0.4) 100%); }
-
 .about-banner {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  background-size: cover, cover; }
 
 .fp-banner-logo {
   position: absolute;
@@ -727,22 +724,67 @@ object {
   font-weight: 700;
   text-transform: uppercase;
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-35%, -50%);
+          transform: translate(-35%, -50%);
   text-align: center;
   font-size: 50px; }
+
+.page-about .entry-header .entry-title {
+  display: none; }
+
+.site-main .entry-content
+p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; }
+
+.site-main h2 {
+  text-align: center;
+  color: #2F1339;
+  font-size: 34px;
+  font-family: Novovento Sans Web,sans-serif; }
+
+.blog .entry-header .entry-title a {
+  background-color: #248A83;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  max-width: 75%; }
+
+.blog .entry-header {
+  position: relative; }
+
+.blog .entry-header .entry-meta {
+  background-color: #248A83;
+  color: white;
+  display: inline-block;
+  padding: 8px;
+  position: absolute;
+  bottom: 1.5%;
+  right: 20%; }
+
+.blog .site-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 3rem; }
 
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .tent-logo {
   height: 80px;

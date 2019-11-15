@@ -64,7 +64,7 @@
 				if (is_page('About')) :
 					if (has_post_thumbnail()) : ?>
 					<div class="about-banner" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), 
-													url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover;">;
+													url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover; background-position: center bottom;background-repeat:no-repeat; ">;
 						<?php echo the_title("<h1 class='page-heading'>", "</h1>"); ?>
 					</div>
 			<?php

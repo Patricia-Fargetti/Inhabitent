@@ -1,0 +1,39 @@
+
+.site-content{
+	display: flex;
+	width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+	
+}
+.tent-logo{
+	height: 80px;
+	width: 80px;
+	order: 1;
+	margin-left: auto;
+}
+
+.centered-logo{
+    transform: translate(50%, 20%);
+}
+
+.widget-area{
+width: 200px;
+}
+
+.site-footer{background: url("../../images/footer/dark-wood.png");background-position: fixed;
+	width:auto;
+}
+.site-description{
+	display: none;
+}
+.header-menu{
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	
+}
+fieldset{
+	display: inline;
+}
