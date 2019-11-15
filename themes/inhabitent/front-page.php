@@ -17,33 +17,26 @@ get_header(); ?>
 
         <?php endwhile; // End of the loop. 
         ?>
-        <section class="product-info-container">
-            <h2> SHOP STUFF </h2>
-            <div class="list-of-activities">
-                <div class="list-each-item">
-                    <img src="">
-                    <p> Get back to nature with all the tools and toys you need to enjoy the great outdoors</p>
-                    <p>
-                        <a>
-                    </p>
-                    <div class="list-each-item">
-                        <img src="">
-                        <p>Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-                        <p>
-                            <a>
-                        </p>
-                        <div class="list-each-item">
-                            <img src="">
-                            <p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-                            <p>
-                                <a>
-                            </p>
-                            <div class="list-each-item">
-                                <img src="">
-                                <p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-                                <p>
-                                    <a>
-                                </p>
+        <section class="product-info container">
+            <h2>Shop Stuff</h2>
+            <?php
+            $terms = get_terms(array(
+                'taxonomy' => 'product_type',
+                'hide_empty' => 0,
+            ));
+            if (!empty($terms) && !is_wp_error($terms)) :
+                ?>
+                <div class="product-type-blocks">
+                    <?php foreach ($terms as $term) : ?>
+                        <div class="product-type-block-wrapper">
+                            <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+                            <p><?php echo $term->description; ?></p>
+                            <p><a href="<?php echo get_term_link($term); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+        </section>
 
 
 
