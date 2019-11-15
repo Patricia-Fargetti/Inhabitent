@@ -801,11 +801,6 @@ p {
 .widget-area {
   width: 200px; }
 
-.site-footer {
-  background: url("../../images/footer/dark-wood.png");
-  background-position: fixed;
-  width: auto; }
-
 .site-description {
   display: none; }
 
@@ -823,3 +818,59 @@ p {
 
 fieldset {
   display: inline; }
+
+.page-home .product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+
+.page-home .product-type-block-wrapper {
+  border: 1px solid grey;
+  border-top-width: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23.5%;
+          flex: 0 1 23.5%;
+  max-width: 23.5%;
+  padding: 0.75rem; }
+
+.page-home .product-type-blocks p {
+  margin-bottom: 1.5rem; }
+
+.product-type-block-wrapper img {
+  width: 70px;
+  height: 70px; }
+
+.product-type-blocks p:last-child {
+  margin-bottom: 0.75rem; }
+
+a.btn {
+  background: #248a83;
+  text-decoration: none;
+  color: white;
+  padding: .75rem 1.5rem;
+  cursor: pointer;
+  font-family: Novocento Sans Web,sans-serif;
+  font-size: .9rem;
+  text-transform: uppercase; }
+
+.container {
+  margin-right: 100px;
+  margin-left: 100px;
+  width: 1120px; }
+
+.page-home .product-info {
+  margin-bottom: 4.5rem; }
+
+.journal-thumbnail {
+  background-size: cover;
+  height: 300px;
+  width: 400px; }
+
+.f-journals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
