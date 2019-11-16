@@ -670,6 +670,10 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  background: url("../../images/footer/dark-wood.png");
+  width: auto; }
+
 .site-header {
   position: fixed;
   width: 100%;
@@ -900,7 +904,8 @@ a.btn {
           justify-content: space-evenly; }
 
 .related-post-title {
-  color: #248a83; }
+  color: #248a83;
+  letter-spacing: 2px; }
 
 .comments-post {
   color: #404040;
