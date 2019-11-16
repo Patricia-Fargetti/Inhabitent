@@ -706,7 +706,7 @@ h3 {
 .footer-style {
   margin-right: 100px;
   margin-left: 100px;
-  width: 1120px;
+  width: 1240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,6 +818,9 @@ p {
   color: #2F1339;
   font-size: 34px;
   font-family: Novovento Sans Web,sans-serif; }
+
+.entry-content {
+  margin: 2.5rem 18rem 4rem; }
 
 .blog .entry-header .entry-title a {
   background-color: #248A83;
@@ -992,7 +995,20 @@ a {
   border-width: 1px;
   font-weight: 300; }
 
-a:hover {
+.page-home a:hover {
   background-color: #248a83;
   color: white;
   border: none; }
+
+.read-entry {
+  margin-left: 10px; }
+
+.page-find-us .entry-content {
+  margin: 0px; }
+
+.widget-area {
+  padding-left: 150px; }
+
+.page-find-us .entry-content {
+  margin: 0;
+  border-right: 1px solid gray; }

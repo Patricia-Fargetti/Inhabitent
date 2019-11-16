@@ -16,12 +16,13 @@
 			<div class="this">
 				<div class="contact-info">
 					<h3> Contact Info </h3>
-					<a href="mailto:info@inhabitent.com"><i class="fas fa-envelope"></i>info@inhabitent.com</a>
-					<a href="tel:778-456-7891"><i class="fas fa-phone"></i>778-456-7891</a>
+					<a href="mailto:info@inhabitent.com"><i class="fas fa-envelope"></i> info@inhabitent.com</a>
+					<a href="tel:778-456-7891"><i class="fas fa-phone"></i> 778-456-7891</a>
 					<p>
 						<span> <i class="fab fa-facebook-square"></i> </span>
 						<span><i class="fab fa-twitter-square"></i></span>
 						<span><i class="fab fa-instagram"></i></span>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -30,9 +31,13 @@
 				<h3> Business Hours </h3>
 				<p>
 					<span class="day-of-week"> Monday-Friday:</span>9am to 5pm
-
+				</p>
+				<p>
 					<span class="day-of-week">Saturday:</span>10am to 2 pm
+				</p>
+				<p>
 					<span class="day-of-week"> Sundays:</span>Closed
+				</p>
 			</div>
 		</div>
 		<div class="footer-block-item-img">
