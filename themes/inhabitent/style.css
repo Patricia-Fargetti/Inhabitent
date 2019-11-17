@@ -1007,8 +1007,41 @@ a {
   margin: 0px; }
 
 .widget-area {
-  padding-left: 150px; }
+  padding-left: 280px;
+  width: 40%; }
 
 .page-find-us .entry-content {
   margin: 0;
   border-right: 1px solid gray; }
+
+.site-main .entry-content p {
+  display: none; }
+
+.post-type-archive-product img {
+  max-height: 250px;
+  width: auto; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem;
+  text-align: center;
+  display: inline; }
+
+.taxonomy-description {
+  margin: 2rem auto 3rem;
+  max-width: 800px; }
+
+.wrapper {
+  background-color: #e1e1e1;
+  height: 250px;
+  overflow: hidden;
+  position: relative; }
+
+.grid-item {
+  border: 1px solid #e1e1e1; }
