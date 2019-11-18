@@ -37,26 +37,24 @@ get_header(); ?>
 				<?php endif; ?>
 			</header><!-- .page-header -->
 			<div class="grid">
-				<div class="grid-item">
-					<div class="wrapper">
-						<?php /* Start the Loop */ ?>
-						<?php while (have_posts()) : the_post(); ?>
+				<div class="wrapper product-grid">
+					<?php /* Start the Loop */ ?>
+					<?php while (have_posts()) : the_post(); ?>
 
-							<?php
-									get_template_part('template-parts/content');
-									?>
+						<?php
+								get_template_part('template-parts/content', 'product');
+								?>
 
-						<?php endwhile; ?>
+					<?php endwhile; ?>
 
-						<?php the_posts_navigation(); ?>
+					<?php the_posts_navigation(); ?>
 
-					<?php else : ?>
+				<?php else : ?>
 
-						<?php get_template_part('template-parts/content', 'none'); ?>
+					<?php get_template_part('template-parts/content', 'none'); ?>
 
-					<?php endif; ?>
+				<?php endif; ?>
 
-					</div>
 				</div>
 			</div>
 
