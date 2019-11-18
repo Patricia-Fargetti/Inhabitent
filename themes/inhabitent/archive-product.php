@@ -18,24 +18,47 @@ get_header(); ?>
 					the_archive_title('<h1 class="shop">', '</h1>');
 					the_archive_description('<div class="taxonomy-description">', '</div>');
 					?>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while (have_posts()) : the_post(); ?>
-
 				<?php
-						get_template_part('template-parts/content');
+					$terms = get_terms(array(
+						'taxonomy' => 'product_type',
+						'hide_empty' => 0,
+					));
+					if (!empty($terms) && !is_wp_error($terms)) :
 						?>
+					<h1 class="page-title-archive">Shop Stuff</h1>
+					<div class="first-page-product-choose">
 
-			<?php endwhile; ?>
+						<?php foreach ($terms as $term) : ?>
+							<div class="product-type-block-wrapper">
+								<p><a href="<?php echo get_term_link($term); ?>" class="btn"><?php echo $term->name; ?></a></p>
+							</div>
+						<?php endforeach; ?>
+					</div>
+				<?php endif; ?>
+			</header><!-- .page-header -->
+			<div class="grid">
+				<div class="grid-item">
+					<div class="wrapper">
+						<?php /* Start the Loop */ ?>
+						<?php while (have_posts()) : the_post(); ?>
 
-			<?php the_posts_navigation(); ?>
+							<?php
+									get_template_part('template-parts/content');
+									?>
 
-		<?php else : ?>
+						<?php endwhile; ?>
 
-			<?php get_template_part('template-parts/content', 'none'); ?>
+						<?php the_posts_navigation(); ?>
 
-		<?php endif; ?>
+					<?php else : ?>
+
+						<?php get_template_part('template-parts/content', 'none'); ?>
+
+					<?php endif; ?>
+
+					</div>
+				</div>
+			</div>
 
 	</main><!-- #main -->
 </div><!-- #primary -->

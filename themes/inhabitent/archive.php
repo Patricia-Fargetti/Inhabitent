@@ -18,28 +18,24 @@ get_header(); ?>
 					the_archive_description('<div class="taxonomy-description">', '</div>');
 					?>
 			</header><!-- .page-header -->
-			<div class="grid">
-				<div class="grid-item">
-					<div class="wrapper">
-						<?php /* Start the Loop */ ?>
-						<?php while (have_posts()) : the_post(); ?>
 
-							<?php
-									get_template_part('template-parts/content');
-									?>
+			<?php /* Start the Loop */ ?>
+			<?php while (have_posts()) : the_post(); ?>
 
-						<?php endwhile; ?>
+				<?php
+						get_template_part('template-parts/content');
+						?>
 
-						<?php the_posts_navigation(); ?>
+			<?php endwhile; ?>
 
-					<?php else : ?>
+			<?php the_posts_navigation(); ?>
 
-						<?php get_template_part('template-parts/content', 'none'); ?>
+		<?php else : ?>
 
-					<?php endif; ?>
-					</div>
-				</div>
-			</div>
+			<?php get_template_part('template-parts/content', 'none'); ?>
+
+		<?php endif; ?>
+
 	</main><!-- #main -->
 </div><!-- #primary -->
 

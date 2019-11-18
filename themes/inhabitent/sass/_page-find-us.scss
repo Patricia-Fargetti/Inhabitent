@@ -1,11 +1,17 @@
 
 .page-find-us{
 .entry-content {
-    margin:0px;
+       margin-left: 50px;
 }}
 .widget-area{
-    padding-left: 280px;
-    width: 40%;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 500px;
+    top: 100px;
+   
   
 }
 .page-find-us .entry-content {
@@ -14,3 +20,17 @@
     // .figure {
     //     margin: 1em 180px;
     // // } this is to go to half of the page 
+    .custom-html-widget {
+    a{
+        text-decoration: none;
+        color:#248a83;line-height: 3rem;
+    }}
+    .page-find-us ul{
+        margin:0;
+    }
+    .page-find-us{
+        .wpcf7-form-control-wrap{
+    .wpcd7-form-control{
+
+        width: 60%;
+    }}}
