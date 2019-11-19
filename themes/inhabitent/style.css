@@ -1154,7 +1154,8 @@ a {
   font-size: 40px;
   font-family: Novovento Sans Web,sans-serif;
   margin-bottom: 50px;
-  font-weight: 300; }
+  font-weight: 300;
+  text-transform: uppercase; }
 
 .page-find-us .entry-content {
   margin-left: 50px; }
@@ -1417,3 +1418,9 @@ h2.entry-title {
   .socialmedia a:hover {
     background-color: #248a83;
     color: white; }
+
+.single-post .entry-title {
+  color: #d99054;
+  position: absolute;
+  top: 50px;
+  right: 100px; }
