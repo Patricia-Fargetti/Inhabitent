@@ -4,14 +4,32 @@
     z-index: 99;
     .search_form {
         order: 3;
+        margin-right: 210px;
     }
     .search-field {
         display: none;
+    }
+    a:visited{ 
+        color:#248a83;
     }
 }// .site-header
 .header-menu{
     background-color: rgba(white, .85);
     
+}
+.search-field input[type=search]{
+border: 0;
+background: transparent;
+font-family: Novecento Sans Web,sans-serif;
+margin-left: .75rem;
+padding: 0 .3rem;
+text-transform: uppercase;}
+
+
+.icon-search{
+    color: #248a83;
+    float: left;
+    padding-top: 1rem;
 }
 
 .main-navigation{
@@ -57,9 +75,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-// .search-field{
-//     //display: none;
-// }
+
 .site-content {
 .page-heading{
     color: white  !important; 

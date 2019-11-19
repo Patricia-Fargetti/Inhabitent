@@ -771,12 +771,28 @@ h3 {
   .site-header .search_form {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
-            order: 3; }
+            order: 3;
+    margin-right: 210px; }
   .site-header .search-field {
     display: none; }
+  .site-header a:visited {
+    color: #248a83; }
 
 .header-menu {
   background-color: rgba(255, 255, 255, 0.85); }
+
+.search-field input[type=search] {
+  border: 0;
+  background: transparent;
+  font-family: Novecento Sans Web,sans-serif;
+  margin-left: .75rem;
+  padding: 0 .3rem;
+  text-transform: uppercase; }
+
+.icon-search {
+  color: #248a83;
+  float: left;
+  padding-top: 1rem; }
 
 .main-navigation {
   display: -webkit-box;
@@ -1088,6 +1104,12 @@ a {
 .page-find-us .widget_archive ul {
   text-decoration: none;
   color: #248a83; }
+
+.page-find-us .site-content {
+  padding-top: 80px; }
+
+.page-find-us .entry-title {
+  margin-left: 100px; }
 
 .post-type-archive-product img {
   max-height: 250px;
