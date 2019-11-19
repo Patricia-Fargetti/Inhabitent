@@ -1062,6 +1062,83 @@ a {
 .read-entry {
   margin-left: 10px; }
 
+.page-home .entry-header .entry-title {
+  display: none; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'girl girl beach beach'  'girl girl mountain sky'; }
+
+.canoe-girl {
+  width: 550px;
+  height: 550px;
+  grid-area: girl; }
+
+.beach {
+  height: 265px;
+  width: 550px;
+  grid-area: beach; }
+
+.mountain {
+  width: 265px;
+  height: 265px;
+  grid-area: mountain; }
+
+.sky {
+  width: 265px;
+  height: 265px;
+  grid-area: sky; }
+
+.nighttxt {
+  position: absolute;
+  right: 220px;
+  top: 90px; }
+
+.naturetxt {
+  position: absolute; }
+
+.viewtxt {
+  position: absolute;
+  left: 562px;
+  bottom: 100px; }
+
+.latest-adventures {
+  position: relative; }
+
+.startxt {
+  position: absolute;
+  right: 151px;
+  bottom: 130px; }
+
+.home .grid a {
+  text-decoration: none;
+  color: white; }
+
+.naturetxt .titulo {
+  color: white;
+  font-size: 30px;
+  background-color: gray; }
+
+.nighttxt .titulo a {
+  color: white;
+  font-size: 30px;
+  background-color: gray; }
+
+.viewtxt .titulo a {
+  font-size: 24px;
+  background-color: gray; }
+
+.startxt .titulo a {
+  font-size: 22px;
+  background-color: gray; }
+
+.grid a.white-btn {
+  padding: 20px;
+  border: 2px solid lightgray;
+  color: lightgray; }
+
 .page-find-us .entry-content {
   margin-left: 50px; }
 
