@@ -26,7 +26,11 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. 
 		?>
-
+		<div class="socialmedia">
+			<a class="like" href="#"> <span> <i class="fab fa-facebook-square"></i> </span> LIKE</a>
+			<a class="like" href="#"> <span><i class="fab fa-twitter-square"></i></span> TWEET </a>
+			<a class="like" href="#"> <span><i class="fab fa-pinterest"></i></span> PIN</a>
+		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

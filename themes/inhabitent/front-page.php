@@ -74,7 +74,7 @@ get_header(); ?>
             <div class="title-of-post">
                 <h2> LATEST ADVENTURES </h2>
             </div>
-            <div class="grid">
+            <div class="wrapping">
                 <img class="canoe-girl" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg' ?>" alt="canoeing">
                 <div class="naturetxt">
                     <h3 class="titulo">

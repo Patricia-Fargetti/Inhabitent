@@ -23,7 +23,12 @@ background: transparent;
 font-family: Novecento Sans Web,sans-serif;
 margin-left: .75rem;
 padding: 0 .3rem;
-text-transform: uppercase;}
+text-transform: uppercase;
+transition: width 0.2s ease-in-out;}
+input[type=search]:focus {
+    width: 100%;
+    color:goldenrod;
+background:transparent ;}
 
 
 .icon-search{

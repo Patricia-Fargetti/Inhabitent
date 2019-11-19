@@ -722,7 +722,7 @@ object {
   padding-bottom: 20px; }
 
 h3 {
-  color: orange; }
+  color: #d99054; }
 
 .footer-style {
   margin-right: 100px;
@@ -787,7 +787,14 @@ h3 {
   font-family: Novecento Sans Web,sans-serif;
   margin-left: .75rem;
   padding: 0 .3rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out; }
+
+input[type=search]:focus {
+  width: 100%;
+  color: goldenrod;
+  background: transparent; }
 
 .icon-search {
   color: #248a83;
@@ -1065,7 +1072,8 @@ a {
 .page-home .entry-header .entry-title {
   display: none; }
 
-.grid {
+.page-home .wrapping {
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -1083,12 +1091,12 @@ a {
 
 .mountain {
   width: 265px;
-  height: 265px;
+  height: 100%;
   grid-area: mountain; }
 
 .sky {
   width: 265px;
-  height: 265px;
+  height: 100%;
   grid-area: sky; }
 
 .nighttxt {
@@ -1112,9 +1120,10 @@ a {
   right: 151px;
   bottom: 130px; }
 
-.home .grid a {
+.home .wrapping a {
   text-decoration: none;
-  color: white; }
+  color: white;
+  background: transparent; }
 
 .naturetxt .titulo {
   color: white;
@@ -1134,8 +1143,8 @@ a {
   font-size: 22px;
   background-color: gray; }
 
-.grid a.white-btn {
-  padding: 20px;
+.wrapping a.white-btn {
+  padding: 10px;
   border: 2px solid lightgray;
   color: lightgray; }
 
@@ -1267,8 +1276,9 @@ h2.entry-title {
   display: -ms-flexbox;
   display: flex; }
 
-.content-area {
-  margin: auto; }
+.archive .content-area {
+  margin: auto;
+  margin-top: 50px; }
 
 .archive .product-meta {
   display: -webkit-box;
@@ -1341,3 +1351,61 @@ h2.entry-title {
 
 .site-content {
   margin-bottom: 60px; }
+
+.single h1 {
+  color: #d99054;
+  position: absolute;
+  top: 50px;
+  right: 500px; }
+
+.single .hentry {
+  margin: 0 0 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single .site-main {
+  position: relative; }
+
+.single .site-main .entry-content p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  margin-top: 160px; }
+
+.single .site-main h2 {
+  font-size: 20px;
+  position: absolute;
+  top: 107px;
+  right: 675px;
+  font-weight: 400;
+  font-family: Novecento Sans Web,sans-serif; }
+
+.single .entry-content {
+  margin: 1.5rem 5rem 0 5rem; }
+
+.single .entry-meta {
+  display: none; }
+
+.single .nav-next, .nav-previous {
+  display: none; }
+
+.single .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  position: absolute;
+  right: 500px; }
+
+.socialmedia a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 1px solid black; }
+  .socialmedia a:hover {
+    background-color: #248a83;
+    color: white; }
