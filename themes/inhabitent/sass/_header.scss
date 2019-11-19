@@ -2,9 +2,15 @@
     position:fixed;
     width: 100%;
     z-index: 99;
-}
+    .search_form {
+        order: 3;
+    }
+    .search-field {
+        display: none;
+    }
+}// .site-header
 .header-menu{
-    background-color: rgba(white, 0.6);
+    background-color: rgba(white, .85);
     
 }
 
@@ -15,7 +21,7 @@
 	height: auto;
 	width: auto;
 	order: 2;
-    margin-right: 50px;
+    margin-left: auto;
 	align-self: center;
 }
 
@@ -27,6 +33,7 @@
         padding: 0.625rem;
     }
 }
+
 
 .fp-banner {
     position: relative;

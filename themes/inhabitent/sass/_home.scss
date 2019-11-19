@@ -14,7 +14,7 @@
 
 .blog{
     .entry-header{ position: relative;
-        img{
+        img{    width: 100%;
         }}}
 
 .blog{
@@ -25,14 +25,13 @@
             display: inline-block;
              padding: 8px;
              position: absolute;
-             bottom: 1.5%;
-             right: 43%;
+             bottom: 12.5px;
+             right: 5px;
 }}}
 
 
 .blog{
     .site-content{
-        margin-left: auto;
         margin-right: auto;
         width: 1120px;
         padding-top: 3rem;
@@ -47,7 +46,13 @@
     border-right: #d2cfcf;
     border-right-width: 1px;
     border-right-style: solid;
+    margin-left: 100px;
 }}
 
 h2.widget-title 
 {color: #2f1339;}
+.blog.site-main{
+    padding: 50px;
+    }
+   
+   

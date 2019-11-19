@@ -9,17 +9,14 @@
     flex-direction: column;
     position: absolute;
     right: 0;
-    width: 500px;
+    width: 450px;
     top: 100px;
-   
   
 }
 .page-find-us .entry-content {
-    margin: 0;
-    border-right: 1px solid gray;}
-    // .figure {
-    //     margin: 1em 180px;
-    // // } this is to go to half of the page 
+    border-right: 1px solid gray;
+    padding-right: 60px;}
+
     .custom-html-widget {
     a{
         text-decoration: none;
@@ -34,3 +31,15 @@
 
         width: 60%;
     }}}
+
+    .page-find-us .content-area {
+        margin-left: 200px;}
+        
+        .page-find-us .site-main .entry-content{
+            width: 680px; margin-bottom: 120px;
+        }
+
+        .page-find-us .widget_archive ul{
+            text-decoration: none;
+         color: #248a83;
+        }

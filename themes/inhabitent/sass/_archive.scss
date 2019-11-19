@@ -6,7 +6,7 @@ img{
 
 .page-header{
     border-bottom: 1px dashed #c8c8c8;
-    margin-bottom: 3rem;
+   
     text-align: center;
     display: inline;
 }
@@ -15,3 +15,13 @@ img{
     max-width: 800px;
 }
 
+.tax-product_type{
+.all-items{
+display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:15px 30px;
+    margin-bottom: 90px;
+}}
+.post-type-archive-product .entry-content{
+    display: none;
+}

@@ -32,15 +32,28 @@
 
 			<div class="header-menu">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?>
+					</button>
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+
 				</nav><!-- #site-navigation -->
 				<a href="<?php echo home_url(); ?>">
-					<img class="tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" />
+					<?php
+					$pagename = get_query_var('pagename');
+					// echo $pagename;
+					// echo is_front_page();
+					if (is_front_page() || $pagename === 'about') { ?>
+						<img class="tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" />
+					<?php } else { ?>
+						<!-- green logo -->
+						<img class="tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" />
+					<?php } ?>
 				</a>
+
+				<div class="search_form"><?php get_search_form(); ?> </div>
 			</div>
 			<!--header-menu -->
-			<div class="search_form"><?php get_search_form(); ?> </div>
+
 
 		</header><!-- #masthead -->
 
