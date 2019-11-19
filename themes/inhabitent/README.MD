@@ -1,7 +1,7 @@
 ## About the project
 
-INHABITENT is a  mockup store 
-DESKTOP COMPATIBILITY
+INHABITENT is a camping gear mockup store which has a blog , about us and products page. 
+- DESKTOP COMPATIBILITY
 
 ### Technologies Used:
 
