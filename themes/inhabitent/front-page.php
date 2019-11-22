@@ -102,11 +102,13 @@ get_header(); ?>
                 <img class="sky" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg' ?>" alt="hikers">
                 <div class="startxt">
                     <h3 class="titulo">
-                        <a href="#">Star-Gazing<br> at the <br>Night Sky</a>
+                        <a href="#">Star-Gazing at<br> the Night Sky</a>
                     </h3>
                     <a class="white-btn" href="#">Read More</a>
                 </div>
-
+                <div class="more-adv-btn">
+                    <p> MORE ADVENTURES </p>
+                </div>
 
             </div>
 

@@ -158,72 +158,80 @@ grid-template-areas:'girl girl beach beach'
     width: 550px;
     height: 550px;
     grid-area:girl;
+    object-fit: cover;
 }
 .beach{ 
     height: 265px;
     width: 550px;
+    object-fit: cover;
     grid-area:beach;
 }
 
 .mountain{ 
     width: 265px;
     height: 100%;
+    object-fit: cover;
     grid-area:mountain;
 }
 
 .sky{
     width: 265px;
     height: 100%;
+    object-fit: cover;
     grid-area:sky;
 }
 // GRID IS DONE
 .nighttxt{
     position: absolute;
-    right: 220px;
+    right:190px;
     top: 90px;
 }
 .naturetxt{
     position: absolute;
+    left: 46px;
 }
 .viewtxt{
     position: absolute;
-left: 562px;
-bottom: 100px;
+    left: 586px;
+    bottom: 148px;
 }
 .latest-adventures{
    position: relative;
    
 }
 .startxt{position: absolute;
-    right: 151px;
-    bottom: 130px;}
+    right: 113px;
+    bottom: 176px;}
 
 .home .wrapping a{
     text-decoration: none;
      color: white;
      background: transparent;
+     font-family: Merriweather Web,serif;
+     font-weight: 100;
+ 
 }
 .naturetxt .titulo{
     color: white;
-    font-size: 30px;
-    background-color: gray
+    font-size: 48px;
+    
 }
 .nighttxt .titulo a{
 color: white;
-font-size: 30px;
-background-color: gray;
+font-size: 38px;
+
 }
 .viewtxt .titulo a {
     font-size: 24px;
-    background-color: gray;
+    
 }
 .startxt .titulo a{
-    font-size: 22px;
-    background-color: gray;
+    font-size: 24px;
+   
 }
 .wrapping a.white-btn{padding: 10px;
-    border: 2px solid lightgray;
-color: lightgray;}
+    border: 2px solid white;
+color: white;}
 
 .page-home .site-main h2 {
     text-align: center;
@@ -233,3 +241,15 @@ color: lightgray;}
     margin-bottom: 50px;
     font-weight: 300;
     text-transform: uppercase;}
+
+    .more-adv-btn{
+        color: white;
+        background:#248a83;
+        margin-bottom: 0;
+        display: inline;
+        margin-top: 14px;
+        width: 190px;
+        text-align: center;
+    }
+    
+    
