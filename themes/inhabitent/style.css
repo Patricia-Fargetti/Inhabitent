@@ -1377,28 +1377,28 @@ h2.entry-title {
 .site-content {
   margin-bottom: 60px; }
 
-.single h1 {
+.single-product h1 {
   color: #d99054;
   position: absolute;
   top: 50px;
   right: 500px; }
 
-.single .hentry {
+.single-product .hentry {
   margin: 0 0 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.single .site-main {
+.single-product .site-main {
   position: relative; }
 
-.single .site-main .entry-content p {
+.single-product .site-main .entry-content p {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
   margin-top: 160px; }
 
-.single .site-main h2 {
+.single-product .site-main h2 {
   font-size: 20px;
   position: absolute;
   top: 107px;
@@ -1406,16 +1406,16 @@ h2.entry-title {
   font-weight: 400;
   font-family: Novecento Sans Web,sans-serif; }
 
-.single .entry-content {
+.single-product .entry-content {
   margin: 1.5rem 5rem 0 5rem; }
 
-.single .entry-meta {
+.single-product.entry-meta {
   display: none; }
 
-.single .nav-next, .nav-previous {
+.single-product .nav-next, .nav-previous {
   display: none; }
 
-.single .socialmedia {
+.single-product .socialmedia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1435,8 +1435,48 @@ h2.entry-title {
     background-color: #248a83;
     color: white; }
 
-.single-post .entry-title {
-  color: #d99054;
+.single-post .entry-header h1 {
+  background-color: #248A83;
+  color: white;
+  padding: 20px;
   position: absolute;
-  top: 50px;
-  right: 100px; }
+  top: 23%;
+  left: 101px;
+  max-width: 75%; }
+
+.single-post.entry-header img {
+  position: relative;
+  width: 100%; }
+
+.single-post.entry-header .entry-meta {
+  background-color: #248A83;
+  color: white;
+  display: inline-block;
+  padding: 8px;
+  position: absolute;
+  bottom: 12.5px;
+  right: 5px; }
+
+.single-post .site-content {
+  margin-right: auto;
+  width: 1120px;
+  padding-top: 3rem; }
+
+.single-post .content-area {
+  border-right: #d2cfcf;
+  border-right-width: 1px;
+  border-right-style: solid;
+  margin-left: 100px; }
+
+h2.widget-title {
+  color: #2f1339; }
+
+.blog.site-main {
+  padding: 50px; }
+
+.single-post .entry-content p {
+  margin-right: 50px; }
+
+h3 {
+  color: #404040;
+  font-size: 30px; }
