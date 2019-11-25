@@ -8,8 +8,9 @@
 	display: block;
 }
 
-.hentry {
-	margin: 0 0 $base__space-unit;
+.blog .hentry {
+	
+	margin: 0 2.5rem;
 }
 
 .updated:not(.published){

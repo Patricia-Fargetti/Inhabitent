@@ -6,17 +6,18 @@ body,
 button,
 input,
 select,
-textarea {
-	color: $color__text-main;
-	font-family: $font__main;
+textarea,p
+{
+	font-family: Merriweather Web;
 	@include font-size(1);
 	line-height: $font__line-height-body;
 }
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6 {
+a,h1, h2, h3, h4, h5, h6{
 	clear: both;
+	font-family: Novecento Sans Web,sans-serif;
 }
 
 /* Copy */
@@ -24,6 +25,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	margin-bottom: $base__space-unit;
 }
+
+
 
 dfn, cite, em, i {
 	font-style: italic;

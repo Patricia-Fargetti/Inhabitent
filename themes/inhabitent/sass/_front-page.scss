@@ -29,7 +29,8 @@ width: 200px;
 .header-menu{
 	display: flex;
     flex-direction: row;
-	justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
 	
 }
 fieldset{
@@ -110,12 +111,12 @@ text-transform:uppercase;
     display: flex;
     flex-direction: column-reverse;
     height: 180px;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: .75rem;
 }
 
 .related-post-title{
     color:#248a83;
-    letter-spacing: 2px;
 }
 .comments-post{
     color: #404040;
@@ -250,6 +251,10 @@ color: white;}
         margin-top: 14px;
         width: 190px;
         text-align: center;
+    }
+    .page-home h3.related-post-title{
+        font-size: 22.5px;
+        margin-top: 0;
     }
     
     

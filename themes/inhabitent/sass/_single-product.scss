@@ -28,7 +28,7 @@
         }
        
         .single-product.entry-meta{
-           display: none;
+       
        }
        .single-product .nav-next,.nav-previous{
            display: none;
@@ -38,7 +38,7 @@
            justify-content: space-between;
            width:300px;
            position: absolute;
-    right: 500px;
+   left: 50px;
     
        }
        .socialmedia a{
@@ -50,3 +50,16 @@
            background-color: #248a83;
            color: white;
        }}
+       .single-product .entry-header .wp-post-image{
+    width: 530px;
+    height: 300px;
+}
+.socialmedia a{
+               text-decoration: none;
+               color: black;
+               padding: 10px;
+               border: 1px solid black;
+           &:hover{
+               background-color: #248a83;
+               color: white;
+           }}

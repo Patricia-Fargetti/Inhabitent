@@ -32,16 +32,23 @@ h3{color: #d99054;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        color: white;
     }
-  .copyright{
+ 
+    .copyright{
 color: white;
-text-align: center;
+text-align: center;font-family:  Novecento Sans Web,sans-serif;
   }
-  .footer-style{
-    p{color: white;
-    .day-of-week{
+  .footer-style .copyright{
+        p{color: white;
+        font-family: Novecento Sans Web,sans-serif;
+        }   
+  }
+      .day-of-week{
     font-weight: 700;
-    }}}
+    font-family: Merriweather Web;
+    
+    }
 .footer-block-item .business{
     text-align: left; 
      justify-content: center;
