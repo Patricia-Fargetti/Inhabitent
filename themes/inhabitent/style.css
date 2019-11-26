@@ -276,12 +276,10 @@ input,
 select,
 textarea, p {
   font-family: Merriweather Web;
-  font-size: 16px;
-  font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
-a, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: Novecento Sans Web,sans-serif; }
 
@@ -528,7 +526,8 @@ a {
     position: relative; }
   .main-navigation a {
     display: block;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: Novecento Sans Web,sans-serif; }
 
 /* Small menu. */
 .menu-toggle,
@@ -764,7 +763,11 @@ object {
   padding-bottom: 20px; }
 
 h3 {
-  color: #d99054; }
+  color: #d99054;
+  font-size: 1.2rem;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .footer-style {
   margin-right: 100px;
@@ -918,6 +921,9 @@ p {
 
 .page-about .entry-content {
   margin: 2.5rem 18rem 4rem; }
+
+.page-about .site-main {
+  padding: 0; }
 
 .blog .entry-header .entry-title a {
   background-color: #248A83;
@@ -1156,12 +1162,12 @@ a {
 
 .nighttxt {
   position: absolute;
-  right: 190px;
+  right: 18px;
   top: 90px; }
 
 .naturetxt {
   position: absolute;
-  left: 46px; }
+  left: 4px; }
 
 .viewtxt {
   position: absolute;
@@ -1173,7 +1179,7 @@ a {
 
 .startxt {
   position: absolute;
-  right: 113px;
+  right: 22px;
   bottom: 176px; }
 
 .home .wrapping a {
@@ -1443,14 +1449,12 @@ h2.entry-title {
 .single-product .site-main .entry-content p {
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 430px;
   margin-top: 160px; }
 
 .single-product .site-main h2 {
   font-size: 20px;
   position: absolute;
-  top: 107px;
-  right: 675px;
   font-weight: 400;
   font-family: Novecento Sans Web,sans-serif; }
 
@@ -1469,7 +1473,8 @@ h2.entry-title {
           justify-content: space-between;
   width: 300px;
   position: absolute;
-  left: 50px; }
+  right: 201px;
+  bottom: -20px; }
 
 .socialmedia a {
   text-decoration: none;
@@ -1492,6 +1497,23 @@ h2.entry-title {
   .socialmedia a:hover {
     background-color: #248a83;
     color: white; }
+
+.single-product .content-area {
+  margin: 100px; }
+
+.single-product .entry-header h2.entry-title {
+  top: 90px;
+  right: 240px; }
+
+.single-product .entry-title a {
+  font-size: 30px;
+  color: orange;
+  text-decoration: none; }
+
+.single-product .site-main h2 {
+  margin-bottom: 20px;
+  top: 120px;
+  right: 400px; }
 
 .single-post .entry-header h1 {
   background-color: #248A83;
@@ -1538,3 +1560,67 @@ h2.widget-title {
 .single-post h3 {
   color: #404040;
   font-size: 30px; }
+
+.entry-meta {
+  background: #248A83;
+  width: 364px;
+  bottom: -155px;
+  right: 657px;
+  position: absolute;
+  color: white; }
+
+.error404 h1.page-title {
+  text-align: left;
+  font-size: 40px;
+  color: #404040;
+  text-transform: uppercase;
+  margin-bottom: .5rem; }
+
+.error404 .page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.page-content p {
+  font-size: 17px;
+  color: #404040;
+  margin-bottom: 1.5rem; }
+
+.content-area .error404 {
+  border-right: 1px solid #e1e1e1;
+  width: 70%; }
+
+.error404 .site-content {
+  width: 1120px; }
+
+.error404 .site-main {
+  padding-top: 70px;
+  padding-left: 130px; }
+
+.error404 input.search-field {
+  background: #f4f4f4;
+  line-height: 1.75;
+  font-family: Merriweather Web,serif;
+  text-transform: capitalize; }
+
+.error404 .search-form .fa-search {
+  display: none; }
+
+.error404 .widgettitle {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 1.5rem; }
+
+.error404 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.error404 li a {
+  color: #248a83;
+  text-decoration: none; }

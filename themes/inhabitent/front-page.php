@@ -78,7 +78,7 @@ get_header(); ?>
                 <img class="canoe-girl" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg' ?>" alt="canoeing">
                 <div class="naturetxt">
                     <h3 class="titulo">
-                        <a href="#"> Getting Back <br> to Nature in a Canoe</a>
+                        <a href="#"> Getting Back to <br> Nature in a Canoe</a>
                     </h3>
                     <a class="white-btn" href="#">Read More</a>
                 </div>
@@ -86,7 +86,7 @@ get_header(); ?>
                 <img class="beach" src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg' ?>" alt="beach">
                 <div class="nighttxt">
                     <h3 class="titulo">
-                        <a href="#">A Night with Friends at<br> the Beach</a>
+                        <a href="#">A Night with Friends <br> at the Beach</a>
                     </h3>
                     <a class="white-btn" href="#">Read More</a>
                 </div>
