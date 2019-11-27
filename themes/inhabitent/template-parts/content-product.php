@@ -1,17 +1,21 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
-        <?php if (has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail('large'); ?>
-        <?php endif; ?>
-        <header class="entry-header">
-            <div class="product-meta">
-                <?php the_title(sprintf('<p class="entry-title dots"><span><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></span></p>'); ?>
-                <p class="price"> Price: $<?php the_field('price'); ?></p>
-                <!-- get the price -->
+        <a href="<?php echo esc_url(get_permalink()); ?>">
+            <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('large'); ?>
+            <?php endif; ?>
+            <div class="entry-header-tittle">
+                <div class="product-meta dots">
 
+                    <?php the_title('<p class="entry-title">', '</p>');
+                    ?>
+                    <p class="price"> Price: $<?php the_field('price'); ?></p>
+                    <!-- get the price -->
+
+                </div>
             </div>
-
-        </header><!-- .entry-header -->
-        <!-- <div class="dots-after"><span>Title Here</span></div> -->
+        </a>
+    </header><!-- .entry-header -->
+    <!-- <div class="dots-after"><span>Title Here</span></div> -->
 
 </article><!-- #post-## -->

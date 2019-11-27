@@ -57,10 +57,9 @@ get_header(); ?>
                             <div class='journal-thumbnail' style='background-image: url(" <?php the_post_thumbnail_url() ?> ");'> </div>
 
                             <div class="journal-meta">
-                                <p class="read-entry"><a href="<?php echo get_post_permalink($post); ?>"> Read entry</a></p>
+                                <span class="comments-post"><?php inhabitent_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?></span>
                                 <h3 class='related-post-title'> <?php the_title(); ?></h3>
-                                <div class='comments-post'> <?php comments_number(); ?> </div>
-
+                                <a class="read-entry" href="<?php echo get_post_permalink($post); ?>"> Read entry</a>
                             </div>
 
                         </article>

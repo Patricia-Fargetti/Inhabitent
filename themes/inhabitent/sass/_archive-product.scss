@@ -16,6 +16,7 @@
         }
         .entry-header {
             height: 300px;
+            
         }
     }
 }
@@ -53,6 +54,7 @@
     border-bottom: 1px dashed #c8c8c8;
     margin-bottom: 3rem;
     text-align: center;
+    width: 111%;
 }}
 .product-type-block-wrapper a{
 color:#248a83;
@@ -63,7 +65,11 @@ h2.entry-title{
     ;display: flex;
 }
 .archive .content-area{
-    margin: auto;    margin-top: 50px
+    width: 100%;
+    margin-top: 50px;
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .archive{
 .product-meta{
@@ -80,28 +86,38 @@ font-weight: 400;
 z-index: 1;
 }}}
 
+.dots {
+    position: relative;
+
+    &::after{
+        content: ".................................................";
+        white-space: nowrap;
+        z-index: 1;
+        flex-grow: 1;
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+}
      
        .archive{
         .type-product{
             .entry-header{
                .product-meta{
-                   .entry-title.dots{position: relative;
-                    white-space: nowrap;
-                    flex-grow: 3;
-                    display: flex;
-                    overflow: hidden;
-                    
-                    
-                    span {
+                   .entry-title {
+                        margin-bottom: 0;
+                        white-space: nowrap;
+                        display: flex;
+                        overflow: hidden;
+                        background: white;
+                        position: relative;
+                        z-index: 2;
+
+                        span {
                         flex-grow: 2;
                       }
-                      &::after{
-                        content: "............";
-                        white-space: nowrap;
-                        z-index: 1;
-                        flex-grow: 1;
-                        display: block;
-                }}}}}}
+                   }
+                   }}}}
 
        .archive{
        .type-product{
@@ -137,4 +153,24 @@ z-index: 1;
         margin-bottom: 60px;
        }
        
-      
+       .archive .entry-title a{
+          display: block;
+         
+      }
+      .archive .page-title-archive{
+        width: 111%;
+        color: #404040;
+        text-transform: uppercase;
+      }
+      .archive p.entry-title.dots{
+      color: #2f1339;
+      font-size: 1rem;
+      text-transform: none;
+      font-family: Merriweather Web,serif;
+      }
+      .entry-header a:visited,.entry-header a,p.entry-header{
+        color: #2f1339;
+        text-decoration: none;
+       
+        }
+     

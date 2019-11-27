@@ -9,7 +9,7 @@
     .search-field {
         display: none;
     }
-    a:visited{ 
+    a:visited,a:hover{ 
         color:#248a83;
     }
 }// .site-header
@@ -45,7 +45,7 @@ background:transparent ;}
 	width: auto;
 	order: 2;
     margin-left: auto;
-	align-self: center;
+    align-self: center;
 }
 
 .nav-menu {

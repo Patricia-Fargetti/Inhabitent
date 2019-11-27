@@ -34,28 +34,30 @@ get_header(); ?>
 					</div>
 				<?php endif; ?>
 			</header><!-- .page-header -->
-			<div class="grid">
-				<div class="wrapper product-grid">
-					<?php /* Start the Loop */ ?>
-					<?php while (have_posts()) : the_post(); ?>
+			<div class="page-content">
+				<div class="grid">
+					<div class="wrapper product-grid">
 
-						<?php
-								get_template_part('template-parts/content', 'product');
-								?>
+						<?php /* Start the Loop */ ?>
+						<?php while (have_posts()) : the_post(); ?>
 
-					<?php endwhile; ?>
+							<?php
+									get_template_part('template-parts/content', 'product');
+									?>
 
-					<?php the_posts_navigation(); ?>
+						<?php endwhile; ?>
 
-				<?php else : ?>
+						<?php the_posts_navigation(); ?>
 
-					<?php get_template_part('template-parts/content', 'none'); ?>
+					<?php else : ?>
 
-				<?php endif; ?>
+						<?php get_template_part('template-parts/content', 'none'); ?>
 
+					<?php endif; ?>
+
+					</div>
 				</div>
 			</div>
-
 	</main><!-- #main -->
 </div><!-- #primary -->
 

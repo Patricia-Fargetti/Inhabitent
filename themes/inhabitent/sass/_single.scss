@@ -1,15 +1,14 @@
     .single-post .entry-header h1{
         background-color: #248A83;
            color: white;
-           padding: 20px;
+           padding: 10px;
            position: absolute;
-           top: 23%;
-           left: 101px;
-           max-width: 75%;
+           top: 2px;
+           margin-top: 90px;
+           max-width: 47%;
            }
-           .single-post.entry-header img{
-                position: relative;
-                 width: 100%;
+           .single-post .entry-header img{
+             width: 100%;
            }
           .single-post.entry-header{
             .entry-meta{
@@ -49,11 +48,15 @@ h2.widget-title {
 .entry-meta{
     background: #248A83;
     width: 364px;
-    bottom: -155px;
-    right: 657px;
+    bottom: 6px;
+    right: 0;
     position: absolute;
     color: white;
 }
-.entry-meta{
-    
+.logged-in-as a, .cat-links a{
+    color: #248a83;
+    text-decoration: none;
+}
+.single-post .entry-header{
+    position: relative;
 }
